@@ -3,3 +3,7 @@
 /yarn.lock
 
 /*.log
+
+/dist/
+
+/build/
