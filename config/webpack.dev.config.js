@@ -75,7 +75,7 @@ module.exports = {
         loader: "url-loader",
         options: {
           limit: 8192,
-          name: "font/[name].[md5:hash:hex:7],[ext]"
+          name: "font/[name].[md5:hash:hex:7].[ext]"
         },
         include: path.join(__dirname, "../src"),
         exclude: path.join(__dirname, "../node_modules")
