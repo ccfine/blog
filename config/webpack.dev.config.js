@@ -1,5 +1,6 @@
 const path = require("path")
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
   mode: "development",
@@ -16,7 +17,7 @@ module.exports = {
     historyApiFallback: true,
     inline: true,
     open: true,
-    hot: true,
+    hot: false,
     overlay: {
       error: true
     }
@@ -83,6 +84,11 @@ module.exports = {
     ]
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "../src/index.html"),
+      favicon: path.join(__dirname, "../src/assets/favicon.ico"),
+      filename: "index.html"
+    }),
     new ExtractTextPlugin({
       filename: "css/[name].[contenthash:5].css",
       allChunks: true
