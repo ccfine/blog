@@ -1,6 +1,7 @@
 const path = require("path")
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const webpack = require("webpack")
 
 module.exports = {
   mode: "development",
@@ -17,7 +18,7 @@ module.exports = {
     historyApiFallback: true,
     inline: true,
     open: true,
-    hot: false,
+    hot: true,
     overlay: {
       error: true
     }
@@ -92,6 +93,7 @@ module.exports = {
     new ExtractTextPlugin({
       filename: "css/[name].[contenthash:5].css",
       allChunks: true
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ]
 }
