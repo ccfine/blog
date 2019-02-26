@@ -5,10 +5,15 @@ const webpack = require("webpack")
 
 module.exports = {
   mode: "development",
-  entry: path.join(__dirname, "../src/index.js"),
+  entry: {
+    index: [
+      "babel-polyfill",
+      path.join(__dirname, "../src/index.js")
+    ]
+  },
   output: {
     path: path.join(__dirname, "../dist"),
-    filename: "js/bundle.[hash].js"
+    filename: "js/[name].[hash].js"
   },
   devtool: "eval-source-map",
   devServer: {
