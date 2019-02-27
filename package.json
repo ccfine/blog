@@ -5,7 +5,8 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.dev.config.js --color --progress",
-    "dev": "rimraf dist && webpack --config ./config/webpack.dev.config.js --color --progress"
+    "dev": "rimraf dist && webpack --config ./config/webpack.dev.config.js --color --progress",
+    "build": "rimraf build && webpack --config ./config/webpack.prod.config.js --color --progress"
   },
   "repository": {
     "type": "git",
@@ -42,7 +43,8 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "react": "^16.8.1",
