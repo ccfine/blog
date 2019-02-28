@@ -1,7 +1,6 @@
 const webpackMerge = require("webpack-merge")
 const path = require("path")
 const webpack = require("webpack")
-const NameAllModulesPlugin = require("name-all-modules-plugin")
 const commonConfig = require("./webpack.common.config.js")
 
 module.exports = webpackMerge(commonConfig, {
@@ -32,7 +31,6 @@ module.exports = webpackMerge(commonConfig, {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
-    new NameAllModulesPlugin()
+    new webpack.NamedModulesPlugin()
   ]
 })

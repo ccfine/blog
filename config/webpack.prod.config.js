@@ -14,7 +14,11 @@ module.exports = webpackMerge(commonConfig, {
     vendor: [
       "react",
       "react-dom",
-      "react-router-dom"
+      "react-router-dom",
+      "prop-types",
+      "redux",
+      "redux-thunk",
+      "react-redux"
     ]
   },
   output: {
