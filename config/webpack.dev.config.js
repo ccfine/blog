@@ -1,6 +1,7 @@
 const webpackMerge = require("webpack-merge")
 const path = require("path")
 const webpack = require("webpack")
+const NameAllModulesPlugin = require("name-all-modules-plugin")
 const commonConfig = require("./webpack.common.config.js")
 
 module.exports = webpackMerge(commonConfig, {
@@ -13,7 +14,8 @@ module.exports = webpackMerge(commonConfig, {
   },
   output: {
     path: path.join(__dirname, "../dist"),
-    filename: "js/[name].[hash].js"
+    filename: "js/[name].[hash].js",
+    chunkFilename: "js/[name].[chunkhash].js"
   },
   devtool: "eval-source-map",
   devServer: {
@@ -29,6 +31,8 @@ module.exports = webpackMerge(commonConfig, {
     }
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
+    new NameAllModulesPlugin()
   ]
 })
