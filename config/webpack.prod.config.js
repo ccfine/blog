@@ -62,7 +62,7 @@ module.exports = webpackMerge(commonConfig, {
       if (chunk.name) {
         return chunk.name
       }
-      return chunk.mapModules(m => path.relative(m.context, m.request)).join("_")
+      return Array.from(chunk.modulesIterable, m => m.id).join("_")
     })
   ]
 })
