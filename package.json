@@ -1,12 +1,14 @@
 {
   "name": "blog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ccfine`s blog",
   "main": "./src/index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.dev.config.js --color --progress",
     "dev": "rimraf dist && webpack --config ./config/webpack.dev.config.js --color --progress",
-    "build": "rimraf build && webpack --config ./config/webpack.prod.config.js --color --progress"
+    "build": "rimraf build && webpack --config ./config/webpack.prod.config.js --color --progress",
+    "setup": "pm2 deploy ecosystem.config.js production setup",
+    "deploy": "pm2 deploy ecosystem.config.js production"
   },
   "repository": {
     "type": "git",
