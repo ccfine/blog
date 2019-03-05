@@ -3,3 +3,9 @@
 /yarn.lock
 
 /*.log
+
+/dist/
+
+/build/
+
+.DS_Store
