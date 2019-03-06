@@ -29,6 +29,32 @@ module.exports = webpackMerge(commonConfig, {
       error: true
     }
   },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        loader: "babel-loader",
+        options: {
+          "plugins": [
+            [
+              "react-transform",
+              {
+                "transforms": [
+                  {
+                    "transform": "react-transform-hmr",
+                    "imports": ["react"],
+                    "locals": ["module"]
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        include: path.join(__dirname, "../src"),
+        exclude: path.join(__dirname, "../node_modules")
+      }
+    ]
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin()

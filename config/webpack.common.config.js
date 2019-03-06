@@ -6,12 +6,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        loader: "babel-loader",
-        include: path.join(__dirname, "../src"),
-        exclude: path.join(__dirname, "../node_modules")
-      },
-      {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
