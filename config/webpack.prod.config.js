@@ -26,6 +26,16 @@ module.exports = webpackMerge(commonConfig, {
     filename: "js/[name].[chunkhash].js",
     chunkFilename: "js/[name].[chunkhash].js"
   },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        loader: "babel-loader",
+        include: path.join(__dirname, "../src"),
+        exclude: path.join(__dirname, "../node_modules")
+      }
+    ]
+  },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new UglifyJSPlugin(),
