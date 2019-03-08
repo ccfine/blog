@@ -18,7 +18,8 @@ module.exports = webpackMerge(commonConfig, {
       "prop-types",
       "redux",
       "redux-thunk",
-      "react-redux"
+      "react-redux",
+      "redux-persist"
     ]
   },
   output: {

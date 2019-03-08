@@ -3,6 +3,16 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
+  resolve: {
+    alias: {
+      components: path.join(__dirname, "../src/components"),
+      pages: path.join(__dirname, "../src/pages"),
+      css: path.join(__dirname, "../src/css"),
+      assets: path.join(__dirname, "../src/assets"),
+      actions: path.join(__dirname, "../src/redux/actions"),
+      reducers: path.join(__dirname, "../src/redux/reducers")
+    }
+  },
   module: {
     rules: [
       {
@@ -14,7 +24,7 @@ module.exports = {
               loader: "css-loader",
               options: {
                 modules: true,
-                localIdentName: "[name]--[local]__[hash:base64:5]"
+                localIdentName: "[name]--[local]__[hash:base64]"
               }
             },
             {
@@ -65,7 +75,7 @@ module.exports = {
       filename: "index.html"
     }),
     new ExtractTextPlugin({
-      filename: "css/[name].[contenthash:5].css",
+      filename: "css/[name].[hash].css",
       allChunks: true
     })
   ]
