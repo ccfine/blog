@@ -10,4 +10,14 @@
 
 * react（构建ui界面）
 
+* redux（管理数据）
+
+* redux-thunk（redux的异步处理）
+
+* redux-persist（redux数据持久化）
+
+* react-redux（连接react和redux）
+
+* react-router-dom（管理路由）
+
 * pm2（自动化部署到线上服务器）
