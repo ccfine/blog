@@ -20,4 +20,6 @@
 
 * react-router-dom（管理路由）
 
+* react-loadable(组件异步加载)
+
 * pm2（自动化部署到线上服务器）

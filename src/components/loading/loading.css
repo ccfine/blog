@@ -1,0 +1,28 @@
+.container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.loading {
+  composes: iconfont from "~css/iconfont.css";
+  display: inline-block;
+  font-size: 40px;
+  margin-bottom: 10px;
+  animation: loading 1s linear 0s infinite;
+}
