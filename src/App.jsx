@@ -1,6 +1,12 @@
 import React, { Component } from "react"
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
-import Home from "pages/home/Home.jsx"
+import Loadable from "react-loadable"
+import { Loading } from "components/loading/Loading.jsx"
+
+const Home = Loadable({
+  loader: () => import("pages/home/Home.jsx"),
+  loading: Loading
+})
 
 export default class App extends Component {
   constructor () {
@@ -18,7 +24,7 @@ export default class App extends Component {
 
   render () {
     return this.state.hasError? (
-      <div>出错啦。。。</div>
+      <div>出错啦！！！</div>
     ): (
       <BrowserRouter>
         <Switch>

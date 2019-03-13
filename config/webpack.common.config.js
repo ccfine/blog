@@ -9,6 +9,7 @@ module.exports = {
       pages: path.join(__dirname, "../src/pages"),
       css: path.join(__dirname, "../src/css"),
       assets: path.join(__dirname, "../src/assets"),
+      images: path.join(__dirname, "../src/assets/images"),
       actions: path.join(__dirname, "../src/redux/actions"),
       reducers: path.join(__dirname, "../src/redux/reducers")
     }
@@ -57,11 +58,11 @@ module.exports = {
         exclude: path.join(__dirname, "../node_modules")
       },
       {
-        test: /\.(eot|svg|ttf|woff)$/,
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
         loader: "url-loader",
         options: {
           limit: 8192,
-          name: "font/[name].[md5:hash:hex:7].[ext]"
+          name: "font/[name].[md5:hash:hex].[ext]"
         },
         include: path.join(__dirname, "../src"),
         exclude: path.join(__dirname, "../node_modules")
