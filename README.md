@@ -23,3 +23,33 @@
 * react-loadable(组件异步加载)
 
 * pm2（自动化部署到线上服务器）
+
+### 项目运行
+
+#### 安装依赖
+
+推荐使用yarn，不推荐npm
+
+    cd blog
+
+    yarn
+
+#### 开发环境
+
+本地运行
+
+    yarn start
+
+打包，生成dist目录
+	
+    yarn run dev
+
+#### 生产环境
+
+打包，生成build目录
+
+    yarn run build
+
+### 线上地址
+
+[http://blog.ccfine24.com](http://blog.ccfine24.com)
