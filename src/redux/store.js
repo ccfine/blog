@@ -6,10 +6,8 @@ import reducer from "./reducer"
 export let store
 
 if (process.env.NODE_ENV === "development") {
-  store = createStore(reducer, compose(
-    applyMiddleware(thunk),
-    window.devToolsExtension? window.devToolsExtension(): f => f
-  ))
+  const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+  store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
 } else if (process.env.NODE_ENV === "production") {
   store = createStore(reducer, applyMiddleware(thunk))
 }

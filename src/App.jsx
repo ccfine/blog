@@ -8,6 +8,16 @@ const Home = Loadable({
   loading: Loading
 })
 
+const Git = Loadable({
+  loader: () => import("pages/git/Git.jsx"),
+  loading: Loading
+})
+
+const Linux = Loadable({
+  loader: () => import("pages/linux/Linux.jsx"),
+  loading: Loading
+})
+
 export default class App extends Component {
   constructor () {
     super()
@@ -29,6 +39,8 @@ export default class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route path="/home" exact component={ Home } />
+          <Route path="/git" exact component={ Git } />
+          <Route path="/linux" exact component={ Linux } />
           <Redirect to="/home" />
         </Switch>
       </BrowserRouter>
