@@ -1,5 +1,5 @@
 .icon {
   composes: iconfont from "~css/iconfont.css";
-  font-size: 30px;
-  margin-right: 10px;
+  font-size: 3rem;
+  margin-right: 1rem;
 }
