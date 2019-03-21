@@ -3,13 +3,13 @@ const initialState = {
     {
       key: "git",
       icon: "&#xe61b;",
-      title: "git",
+      title: "Git",
       path: "/git"
     },
     {
       key: "linux",
       icon: "&#xe765;",
-      title: "linux",
+      title: "Linux",
       path: "/linux"
     }
   ] 
