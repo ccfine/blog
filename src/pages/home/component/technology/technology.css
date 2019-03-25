@@ -1,3 +1,7 @@
+.container {
+  margin: 2rem 0;
+}
+
 .icon {
   composes: iconfont from "~css/iconfont.css";
   font-size: 3rem;

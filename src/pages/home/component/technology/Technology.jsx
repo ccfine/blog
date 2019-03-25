@@ -23,7 +23,7 @@ export default class Technology extends PureComponent {
     const { icon, title } = this.props.technology
 
     return (
-      <li title={ `点击进入${ title }详情页` } onClick={ this.handleEnterDetail }>
+      <li title={ `点击进入${ title }详情页` } onClick={ this.handleEnterDetail } className={ styles.container }>
         <i dangerouslySetInnerHTML={{ __html: icon }} className={ styles.icon } />
         <span>{ title }</span>
       </li>
