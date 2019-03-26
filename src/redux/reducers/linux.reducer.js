@@ -51,6 +51,30 @@ const initialState = {
     {
       title: "ls -l  |  ll",
       content: "列出该目录下的内容的详情（除文件名称外，亦将文件型态、权限、拥有者、文件大小等资讯详细列出）"
+    },
+    {
+      title: "cp 源文件 目标",
+      content: "将源文件复制到目标路径下"
+    },
+    {
+      title: "cp -r 源目录 目标",
+      content: "将源目录复制到目标路径下"
+    },
+    {
+      title: "mv 源文件/源目录 目标",
+      content: "将源文件或源目录移动到目标路径下，可做文件或目录重命名的操作"
+    },
+    {
+      title: "shutdown -h now | poweroff | halt | init 0",
+      content: "关机"
+    },
+    {
+      title: "shutdown -r now | reboot | init 6",
+      content: "重启"
+    },
+    {
+      title: "shutdown -c",
+      content: "取消关机或重启"
     }
   ]
 }
