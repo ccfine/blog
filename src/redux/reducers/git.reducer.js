@@ -55,6 +55,66 @@ const initialState = {
     {
       title: "git rm 文件",
       content: "删除文件，当删除了工作区的文件，同时也要删除本地库相应的文件"
+    },
+    {
+      title: "git clone url",
+      content: "将远程库克隆到本地"
+    },
+    {
+      title: "git remote add origin url",
+      content: "关联本地库与远程库，并将远程库命名为origin（默认远程库名为origin），一个本地库可关联多个远程库"
+    },
+    {
+      title: "git remote rm origin",
+      content: "删除已关联的名为origin的远程库"
+    },
+    {
+      title: "git remote -v",
+      content: "查看远程库信息"
+    },
+    {
+      title: "git push [-u] origin 分支",
+      content: "将本地库分支的内容推送到远程库相应到分支，一般为master分支，第一次推送时加上-u"
+    },
+    {
+      title: "git branch",
+      content: "查看本地库所有的分支"
+    },
+    {
+      title: "git branch -a",
+      content: "查看本地库以及远程库所有的分支"
+    },
+    {
+      title: "git branch 分支 当前分支",
+      content: "基于当前分支创建新的分支"
+    },
+    {
+      title: "git branch 分支 origin/分支",
+      content: "基于远程库的分支创建新的分支"
+    },
+    {
+      title: "git checkout 分支",
+      content: "切换分支"
+    },
+    {
+      title: "git checkout -b 分支 当前分支|origin/分支",
+      content: "基于当前分支或远程库的分支创建新的分支，并切换到该分支"
+    },
+    {
+      title: "git branch -d 分支",
+      content: "删除分支"
+    },
+    {
+      title: "git branch -D 分支",
+      content: "强制删除分支，丢弃一个没有被合并过的分支"
+    },
+    {
+      title: "git merge 分支",
+      content: "合并某分支到当前分支"
+    },
+    {
+      title: "git merge --no-ff -m \"\" 分支",
+      content: "普通模式合并某分支到当前分支，推荐使用此方法合并分支"
     }
   ]
 }
