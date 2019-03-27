@@ -19,7 +19,12 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
+          fallback: {
+            loader: "style-loader",
+            options: {
+              singleton: true
+            }
+          },
           use: [
             {
               loader: "css-loader",
@@ -73,7 +78,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "../src/index.html"),
       favicon: path.join(__dirname, "../src/assets/favicon.ico"),
-      filename: "index.html"
+      filename: "index.html",
+      minify: {
+        collapseWhitespace: true
+      }
     }),
     new ExtractTextPlugin({
       filename: "css/[name].[hash].css",
