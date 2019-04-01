@@ -66,7 +66,7 @@ const initialState = {
     },
     {
       title: "git remote rm origin",
-      content: "删除已关联的名为origin的远程库"
+      content: "删除已关联的名为origin的远程库地址"
     },
     {
       title: "git remote -v",
@@ -109,12 +109,80 @@ const initialState = {
       content: "强制删除分支，丢弃一个没有被合并过的分支"
     },
     {
+      title: "git push origin --delete 分支",
+      content: "删除远程分支"
+    },
+    {
       title: "git merge 分支",
       content: "合并某分支到当前分支"
     },
     {
       title: "git merge --no-ff -m \"\" 分支",
       content: "普通模式合并某分支到当前分支，推荐使用此方法合并分支"
+    },
+    {
+      title: "git stash",
+      content: "将所有未提交的修改内容（包括工作区和暂存区）储藏起来，并将本地库回退到上个版本"
+    },
+    {
+      title: "git stash list",
+      content: "查看储藏的stash列表"
+    },
+    {
+      title: "git stash apply",
+      content: "恢复储藏的stash"
+    },
+    {
+      title: "git stash drop",
+      content: "删除储藏的stash"
+    },
+    {
+      title: "git stash pop",
+      content: "恢复并删除储藏的stash"
+    },
+    {
+      title: "git branch --set-upstream-to 分支 origin/分支",
+      content: "创建本地分支和远程分支的链接关系"
+    },
+    {
+      title: "git tag 标签 [commit_id]",
+      content: "创建新的标签，默认打在最新提交的commit上"
+    },
+    {
+      title: "git tag",
+      content: "查看所有标签"
+    },
+    {
+      title: "git show 标签",
+      content: "查看标签信息"
+    },
+    {
+      title: "git tag -a 标签 -m \"\" [commit_id]",
+      content: "创建带有说明的标签"
+    },
+    {
+      title: "git tag -d 标签",
+      content: "删除标签"
+    },
+    {
+      title: "git push origin 标签",
+      content: "推送标签到远程库"
+    },
+    {
+      title: "git push origin --tags",
+      content: "推送全部未推送过的标签到远程库"
+    },
+    {
+      title: "git push origin :refs/tags/标签",
+      content: "删除远程标签"
+    },
+    {
+      title: "git branch -m 旧分支 新分支",
+      content: "重命名分支名"
+    },
+    {
+      title: "git rebase -i (,]",
+      content: "编辑commit，前开后闭"
     }
   ]
 }
