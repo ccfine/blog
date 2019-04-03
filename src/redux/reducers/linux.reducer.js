@@ -75,6 +75,106 @@ const initialState = {
     {
       title: "shutdown -c",
       content: "取消关机或重启"
+    },
+    {
+      title: "命令 > 文件",
+      content: "以覆盖的方式，把命令的正确输出输出到指定的文件或设备当中"
+    },
+    {
+      title: "命令 >> 文件",
+      content: "以追加的方式，把命令的正确输出输出到指定的文件或设备当中"
+    },
+    {
+      title: "错误命令 2> 文件",
+      content: "以覆盖的方式，把命令的错误输出输出到指定的文件或设备当中"
+    },
+    {
+      title: "错误命令 2>> 文件",
+      content: "以追加的方式，把命令的错误输出输出到指定的文件或设备当中"
+    },
+    {
+      title: "命令 > 文件 2>&1",
+      content: "以覆盖的方式，把正确输出和错误输出都保存到同一个文件当中"
+    },
+    {
+      title: "命令 >> 文件 2>&1",
+      content: "以追加的方式，把正确输出和错误输出都保存到同一个文件当中"
+    },
+    {
+      title: "命令 &> 文件",
+      content: "以覆盖的方式，把正确输出和错误输出都保存到同一个文件当中"
+    },
+    {
+      title: "命令 &>> 文件",
+      content: "以追加的方式，把正确输出和错误输出都保存到同一个文件当中"
+    },
+    {
+      title: "命令>>文件1 2>>文件2",
+      content: "把正确的输出追加到文件1，把错误的输出追加到文件2"
+    },
+    {
+      title: "zip 压缩文件名 源文件",
+      content: ".zip格式压缩文件"
+    },
+    {
+      title: "zip -r 压缩文件名 源目录",
+      content: ".zip格式压缩目录"
+    },
+    {
+      title: "unzip 压缩文件",
+      content: "解压缩.zip文件"
+    },
+    {
+      title: "tar -zcvf 压缩包名.tar.gz 源文件",
+      content: "压缩为.tar.gz格式"
+    },
+    {
+      title: "tar -zxvf 压缩包名.tar.gz",
+      content: "解压缩.tar.gz格式"
+    },
+    {
+      title: "tar -jcvf 压缩包名.tar.bz2 源文件",
+      content: "压缩为.tar.bz2格式"
+    },
+    {
+      title: "tar -jxvf 压缩包名.tar.bz2",
+      content: "解压缩.tar.bz2格式"
+    },
+    {
+      title: "df -h",
+      content: "查看硬盘情况"
+    },
+    {
+      title: "locate 文件名",
+      content: "在后台数据库中按文件名搜索"
+    },
+    {
+      title: "updatedb",
+      content: "更新数据库"
+    },
+    {
+      title: "grep [-i] [-v] 字符串 文件名",
+      content: "在文件当中匹配符合条件的字符串，-i：忽略大小写，-v：排除指定字符串"
+    },
+    {
+      title: "history",
+      content: "查看历史命令，可使用\"!n\"重复执行第n条命令"
+    },
+    {
+      title: "history -c",
+      content: "清空历史命令"
+    },
+    {
+      title: "history -w",
+      content: "把缓存中的历史命令写入历史命令保存文件~/.bash_history"
+    },
+    {
+      title: "ps -ef | grep",
+      content: "查询进程"
+    },
+    {
+      title: "kill -9 [进程号]",
+      content: "结束进程"
     }
   ]
 }
