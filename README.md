@@ -8,42 +8,42 @@
 
 ```
 blog
-  |-- config - webpack配置
+    |-- config - webpack配置
         |-- webpack.common.config.js - webpack公共配置
         |-- webpack.dev.config.js - webpack开发环境配置
-		|-- webpack.prod.config.js - webpack生产环境配置
-  |-- node_modules - 依赖包
-  |-- src - 源码
+	    |-- webpack.prod.config.js - webpack生产环境配置
+    |-- node_modules - 依赖包
+    |-- src - 源码
 	    |-- assets - 静态资源
-			  |-- iconfont - 阿里图标库
-			  |-- favicon.ico - 网站图标
-		|-- components - 公共组件
-			  |-- instruction - 指令说明组件
-			  |-- loading - 加载效果组件
+		    |-- iconfont - 阿里图标库
+		    |-- favicon.ico - 网站图标
+	    |-- components - 公共组件
+		    |-- instruction - 指令说明组件
+		    |-- loading - 加载效果组件
 		|-- css - 公共css
-              |-- common.css - 公共css，供css类引用
-              |-- global.css - 全局css，可直接使用
-              |-- iconfont.css - 阿里图标css
+            |-- common.css - 公共css，供css类引用
+            |-- global.css - 全局css，可直接使用
+            |-- iconfont.css - 阿里图标css
 		|-- pages - 页面组件
-              |-- git - git详情页
-              |-- home - 首页
-              |-- linux - linux详情页
+            |-- git - git详情页
+            |-- home - 首页
+            |-- linux - linux详情页
 		|-- redux
-              |-- actions - 配置action
-              |-- reducers - 配置reducer
-              |-- reducer.js - 配置根reducer
-              |-- store.js - 配置store
+            |-- actions - 配置action
+            |-- reducers - 配置reducer
+            |-- reducer.js - 配置根reducer
+            |-- store.js - 配置store
 		|-- App.jsx - 配置路由
 		|-- index.html - html模版
 		|-- index.js - 入口文件
-  |-- .babelrc - 配置babel选项
-  |-- .editorconfig - 配置编辑器风格
-  |-- .gitignore - git忽略文件
-  |-- CHANGELOG.md - 日志说明
-  |-- ecosystem.config.js - 配置pm2自动部署
-  |-- package.json - node说明
-  |-- README.md - 项目说明
-  |-- yarn.lock - 依赖包精确说明
+    |-- .babelrc - 配置babel选项
+    |-- .editorconfig - 配置编辑器风格
+    |-- .gitignore - git忽略文件
+    |-- CHANGELOG.md - 日志说明
+    |-- ecosystem.config.js - 配置pm2自动部署
+    |-- package.json - node说明
+    |-- README.md - 项目说明
+    |-- yarn.lock - 依赖包精确说明
 ```
 
 ### 主要技术

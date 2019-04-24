@@ -18,6 +18,16 @@ const Linux = Loadable({
   loading: Loading
 })
 
+const Vim = Loadable({
+  loader: () => import("pages/vim/Vim.jsx"),
+  loading: Loading
+})
+
+const Npm = Loadable({
+  loader: () => import("pages/npm/Npm.jsx"),
+  loading: Loading
+})
+
 export default class App extends Component {
   constructor () {
     super()
@@ -41,6 +51,8 @@ export default class App extends Component {
           <Route path="/home" exact component={ Home } />
           <Route path="/git" exact component={ Git } />
           <Route path="/linux" exact component={ Linux } />
+          <Route path="/vim" exact component={ Vim } />
+          <Route path="/npm" exact component={ Npm } />
           <Redirect to="/home" />
         </Switch>
       </BrowserRouter>
