@@ -11,6 +11,18 @@ const initialState = {
       icon: "&#xe765;",
       title: "Linux",
       path: "/linux"
+    },
+    {
+      key: "vim",
+      icon: "&#xe63c;",
+      title: "Vim",
+      path: "/vim"
+    },
+    {
+      key: "npm",
+      icon: "&#xf1fe;",
+      title: "Npm",
+      path: "/npm"
     }
   ] 
 }

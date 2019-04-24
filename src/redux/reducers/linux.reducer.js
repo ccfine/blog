@@ -175,6 +175,54 @@ const initialState = {
     {
       title: "kill -9 [进程号]",
       content: "结束进程"
+    },
+    {
+      title: "cat 文件",
+      content: "查看文件内容"
+    },
+    {
+      title: "man 指令",
+      content: "查看指令的使用说明"
+    },
+    {
+      title: "指令 --help",
+      content: "查看指令的使用说明"
+    },
+    {
+      title: "help 指令",
+      content: "查看指令的使用说明"
+    },
+    {
+      title: "date",
+      content: "显示系统的日期与时间"
+    },
+    {
+      title: "pwd",
+      content: "查看当前工作目录"
+    },
+    {
+      title: "who [-H]",
+      content: "查看当前登录系统的用户，-H：显示标题栏"
+    },
+    {
+      title: "last",
+      content: "查看用户历史登录信息"
+    },
+    {
+      title: "lastlog",
+      content: "查看所有用户登录的情况"
+    },
+    {
+      title: "chmod (421)(421)(421) 文件",
+      content: "设置文件的权限"
+    },
+    {
+      title: "logout",
+      content: "退出登录的系统"
+    },
+    {
+      title: "wc 文件",
+      content: "计算文件的行数、字数、字节数"
     }
   ]
 }
