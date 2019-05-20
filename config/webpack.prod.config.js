@@ -28,6 +28,7 @@ module.exports = webpackMerge(commonConfig, {
     filename: "js/[name].[chunkhash].js",
     chunkFilename: "js/[name].[chunkhash].js"
   },
+  devtool: "cheap-module-source-map",
   module: {
     rules: [
       {
