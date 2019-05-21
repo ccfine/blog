@@ -4,6 +4,7 @@ import { combineReducers } from "redux"
 import { home } from "reducers/home.reducer"
 import { git } from "reducers/git.reducer"
 import { linux } from "reducers/linux.reducer"
+import { npm } from "reducers/npm.reducer"
 
 export default persistReducer({
   key: "root",
@@ -11,5 +12,6 @@ export default persistReducer({
 }, combineReducers({
   home,
   git,
-  linux
+  linux,
+  npm
 }))

@@ -223,6 +223,18 @@ const initialState = {
     {
       title: "wc 文件",
       content: "计算文件的行数、字数、字节数"
+    },
+    {
+      title: "scp local_file remote_username@remote_ip:remote_folder",
+      content: "将本地文件上传到远程服务器指定目录"
+    },
+    {
+      title: "scp local_file remote_username@remote_ip:remote_file",
+      content: "将本地文件上传到远程服务器指定目录，并另取文件名"
+    },
+    {
+      title: "scp -r local_folder remote_username@remote_ip:remote_folder",
+      content: "将本地文件夹上传到远程服务器指定目录"
     }
   ]
 }
