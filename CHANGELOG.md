@@ -37,3 +37,11 @@
 ### 优化
 
 * 使用新的`redux`控制台调试API，替换旧的即将被移除的API
+
+## [1.0.6] - 2019-05-21
+
+### 优化
+
+* webpack开发环境将SourceMap改为`cheap-module-eval-source-map`
+
+* webpack生产环境添加SourceMap配置，值为`cheap-module-source-map`

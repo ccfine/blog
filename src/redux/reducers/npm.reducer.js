@@ -27,6 +27,10 @@ const initialState = {
     {
       title: "npm uninstall 依赖 [-g]",
       content: "删除node_modules目录下的依赖，同时也会删除package.json中dependencies或devDependencies下的配置，-g：删除全局安装的依赖"
+    },
+    {
+      title: "npm update 依赖",
+      content: "更新依赖版本"
     }
   ]
 }

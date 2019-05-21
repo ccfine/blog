@@ -28,6 +28,8 @@ blog
             |-- git - git详情页
             |-- home - 首页
             |-- linux - linux详情页
+            |-- npm - npm详情页
+            |-- vim - vim详情页
 		|-- redux
             |-- actions - 配置action
             |-- reducers - 配置reducer
