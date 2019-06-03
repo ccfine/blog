@@ -19,6 +19,12 @@ const initialState = {
       path: "/vim"
     },
     {
+      key: "nodejs",
+      icon: "&#xe79b;",
+      title: "Nodejs",
+      path: "/nodejs"
+    },
+    {
       key: "npm",
       icon: "&#xf1fe;",
       title: "Npm",
