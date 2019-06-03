@@ -23,6 +23,11 @@ const Vim = Loadable({
   loading: Loading
 })
 
+const Nodejs = Loadable({
+  loader: () => import("pages/nodejs/Nodejs.jsx"),
+  loading: Loading
+})
+
 const Npm = Loadable({
   loader: () => import("pages/npm/Npm.jsx"),
   loading: Loading
@@ -52,6 +57,7 @@ export default class App extends Component {
           <Route path="/git" exact component={ Git } />
           <Route path="/linux" exact component={ Linux } />
           <Route path="/vim" exact component={ Vim } />
+          <Route path="/nodejs" exact component={ Nodejs } />
           <Route path="/npm" exact component={ Npm } />
           <Redirect to="/home" />
         </Switch>

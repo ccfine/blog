@@ -31,6 +31,26 @@ const initialState = {
     {
       title: "npm update 依赖",
       content: "更新依赖版本"
+    },
+    {
+      title: "npm start",
+      content: "执行package.json中scripts配置下的start对应的命令"
+    },
+    {
+      title: "npm run test",
+      content: "执行package.json中scripts配置下的test对应的命令，可以在scripts配置下设置任意名称的命令"
+    },
+    {
+      title: "npm version major/minor/patch",
+      content: "升级package.json中version的配置，major主版本升级，minor小版本升级，patch修复版本升级"
+    },
+    {
+      title: "npm version",
+      content: "查看项目及其环境的版本，包括当前项目，npm，nodejs，v8(js解析引擎)等的版本"
+    },
+    {
+      title: "npm help",
+      content: "查看npm帮助"
     }
   ]
 }

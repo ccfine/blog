@@ -3,6 +3,7 @@
   "version": "1.0.6",
   "description": "ccfine`s blog",
   "main": "./src/index.js",
+  "sideEffects": false,
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.dev.config.js --color --progress",
     "dev": "rimraf dist && webpack --config ./config/webpack.dev.config.js --color --progress",
