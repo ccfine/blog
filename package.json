@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "ccfine`s blog",
   "main": "./src/index.js",
   "sideEffects": false,

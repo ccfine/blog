@@ -1,37 +1,8 @@
 import React, { Component } from "react"
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
-import Loadable from "react-loadable"
-import { Loading } from "components/loading/Loading.jsx"
+import * as router from "./router.js"
 
-const Home = Loadable({
-  loader: () => import("pages/home/Home.jsx"),
-  loading: Loading
-})
-
-const Git = Loadable({
-  loader: () => import("pages/git/Git.jsx"),
-  loading: Loading
-})
-
-const Linux = Loadable({
-  loader: () => import("pages/linux/Linux.jsx"),
-  loading: Loading
-})
-
-const Vim = Loadable({
-  loader: () => import("pages/vim/Vim.jsx"),
-  loading: Loading
-})
-
-const Nodejs = Loadable({
-  loader: () => import("pages/nodejs/Nodejs.jsx"),
-  loading: Loading
-})
-
-const Npm = Loadable({
-  loader: () => import("pages/npm/Npm.jsx"),
-  loading: Loading
-})
+const { Home, Git, Linux, Vim, Nodejs, Npm, Html, Css } = router
 
 export default class App extends Component {
   constructor () {
@@ -59,6 +30,8 @@ export default class App extends Component {
           <Route path="/vim" exact component={ Vim } />
           <Route path="/nodejs" exact component={ Nodejs } />
           <Route path="/npm" exact component={ Npm } />
+          <Route path="/html" exact component={ Html } />
+          <Route path="/css" exact component={ Css } />
           <Redirect to="/home" />
         </Switch>
       </BrowserRouter>

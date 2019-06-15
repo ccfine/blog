@@ -45,3 +45,13 @@
 * webpack开发环境将SourceMap改为`cheap-module-eval-source-map`
 
 * webpack生产环境添加SourceMap配置，值为`cheap-module-source-map`
+
+## [1.0.7] - 2019-06-15
+
+### 新增
+
+* 新增专门的路由配置文件`router.js`，将路由组件的引入和设置单独抽离出来
+
+### 优化
+
+* 为公共组件库`components`，以及每个路由页面的组件库`component`添加`index.js`，导入导出组件库的组件，优化其他文件引入这些组件库组件的方式
