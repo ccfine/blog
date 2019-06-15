@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import Technology from "./component/technology/Technology.jsx"
+import * as home from "./component"
+
+const { Technology } = home
 
 @connect(
   state => state.home

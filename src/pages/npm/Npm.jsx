@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import Instruction from "components/instruction/Instruction.jsx"
+import { Instruction } from "components"
 
 @connect(
   state => state.npm

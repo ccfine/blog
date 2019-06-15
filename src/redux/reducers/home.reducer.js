@@ -29,6 +29,18 @@ const initialState = {
       icon: "&#xf1fe;",
       title: "Npm",
       path: "/npm"
+    },
+    {
+      key: "html",
+      icon: "&#xe8f7;",
+      title: "Html",
+      path: "/html"
+    },
+    {
+      key: "css",
+      icon: "&#xe600;",
+      title: "Css",
+      path: "/css"
     }
   ] 
 }
