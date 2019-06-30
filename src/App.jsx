@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
-import * as router from "./router.js"
+import * as router from "./router"
 
 const { Home, Git, Linux, Vim, Nodejs, Npm, Html, Css } = router
 

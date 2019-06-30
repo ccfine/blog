@@ -1,4 +1,4 @@
-import Technology from "./technology/Technology.jsx"
+import Technology from "./technology/Technology"
 
 export {
   Technology
