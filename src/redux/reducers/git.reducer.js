@@ -73,12 +73,20 @@ const initialState = {
       content: "查看远程库信息"
     },
     {
+      title: "git remote show origin",
+      content: "查看remote地址，远程分支，还有本地分支与之相对应关系等信息"
+    },
+    {
       title: "git push [-u] origin 分支",
       content: "将本地库分支的内容推送到远程库相应到分支，一般为master分支，第一次推送时加上-u"
     },
     {
       title: "git branch",
       content: "查看本地库所有的分支"
+    },
+    {
+      title: "git branch -r",
+      content: "查看远程库所有的分支"
     },
     {
       title: "git branch -a",
@@ -111,6 +119,10 @@ const initialState = {
     {
       title: "git push origin --delete 分支",
       content: "删除远程分支"
+    },
+    {
+      title: "git remote prune origin",
+      content: "删除本地远程仓库不存在的分支"
     },
     {
       title: "git merge 分支",
