@@ -12,7 +12,7 @@
 
 ### 修复
 
-* 热更新只在webpack.dev.config.js中配置babel options，生产环境文件不配置
+* 热更新只在`webpack.dev.config.js`中配置`babel` options，生产环境文件不配置
 
 ## [1.0.3] - 2019-03-11
 
@@ -42,9 +42,9 @@
 
 ### 优化
 
-* webpack开发环境将SourceMap改为`cheap-module-eval-source-map`
+* `webpack`开发环境将`SourceMap`改为`cheap-module-eval-source-map`
 
-* webpack生产环境添加SourceMap配置，值为`cheap-module-source-map`
+* `webpack`生产环境添加`SourceMap`配置，值为`cheap-module-source-map`
 
 ## [1.0.7] - 2019-06-15
 
@@ -55,3 +55,9 @@
 ### 优化
 
 * 为公共组件库`components`，以及每个路由页面的组件库`component`添加`index.js`，导入导出组件库的组件，优化其他文件引入这些组件库组件的方式
+
+## [1.0.8] - 2019-08-08
+
+### 优化
+
+* `webpack`配置`extensions`，引用.js、.jsx文件可省去拓展名

@@ -1,5 +1,5 @@
-import Instruction from "./instruction/Instruction.jsx"
-import { Loading } from "./loading/Loading.jsx"
+import Instruction from "./instruction/Instruction"
+import { Loading } from "./loading/Loading"
 
 export {
   Instruction,

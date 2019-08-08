@@ -12,7 +12,8 @@ module.exports = {
       images: path.join(__dirname, "../src/assets/images"),
       actions: path.join(__dirname, "../src/redux/actions"),
       reducers: path.join(__dirname, "../src/redux/reducers")
-    }
+    },
+    extensions: [".js", ".jsx"]
   },
   module: {
     rules: [

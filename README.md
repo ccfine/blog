@@ -25,9 +25,12 @@ blog
             |-- global.css - 全局css，可直接使用
             |-- iconfont.css - 阿里图标css
 		|-- pages - 页面组件
+            |-- css - css详情页
             |-- git - git详情页
             |-- home - 首页
+            |-- html - html详情页
             |-- linux - linux详情页
+            |-- nodejs - nodejs详情页
             |-- npm - npm详情页
             |-- vim - vim详情页
 		|-- redux
@@ -38,6 +41,7 @@ blog
 		|-- App.jsx - 配置路由
 		|-- index.html - html模版
 		|-- index.js - 入口文件
+        |-- router.js - 具体路由配置
     |-- .babelrc - 配置babel选项
     |-- .editorconfig - 配置编辑器风格
     |-- .gitignore - git忽略文件
